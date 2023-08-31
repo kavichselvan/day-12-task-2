@@ -1,0 +1,222 @@
+
+ 
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="css\font-awesome.min.css">
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 3fr 3fr ;
+        grid-template-rows: 2fr 1fr 10fr;
+        grid-template-areas: 
+        "header header" 
+        "subheader subheader"
+        "main nav";
+        padding: 1em;
+        gap: 30px;
+      }
+
+      .header {
+        grid-area: header;
+        text-align: center;
+        height: 200px;
+        background-color: rgb(120, 114, 114);
+        bottom: 20px;
+      }
+
+      
+      .nav {
+        grid-area: nav;
+        font-size: 48px;
+      }
+
+      .main {
+        grid-area: main;
+        font-size: 48px;
+        padding-left: 50px;
+        padding-top: 5px;
+      }
+
+       h1 {
+        border: 1px solid black;
+        /* margin-top: 150px;
+        margin-bottom: 200px; */
+        margin-right: 500px;
+        margin-left: 500px;
+        background-color: rgb(213, 213, 195);
+      } 
+
+      p {
+        font-size: 30px;
+        
+      }
+
+      b {
+        text-align: center;
+        font-size: large;
+        padding-left: 140px;
+      }
+
+      i {
+        padding-right: 10px;
+      }
+
+      .container {
+        background-color: rgb(192, 192, 192);
+        width: 80%;
+        border-radius: 150px;
+        height: 2%;
+      }
+
+      .skill {
+        background-color: rgb(116, 194, 92);
+        color: white;
+        padding: 1%;
+        text-align: right;
+        font-size: 13.5%;
+        border-radius: 15px;
+      }
+
+      .js {
+        width: 80%;
+      }
+
+      .css {
+        width: 70%;
+      }
+
+      .html {
+        width: 90%;
+      }
+
+      .react {
+        width: 80%;
+      }
+      
+
+      .vertical {
+            border-left: 6px dotted rgb(87, 81, 81);
+            height: 900px;
+            position:absolute;
+            left: 50%;
+            margin-top: 290px;
+            
+        }
+
+        .nav{
+          padding-top: 5px;
+          padding-left: 30px;
+        }
+
+        span{
+          font-size: larger;
+        }
+        .subheader{
+          grid-area: subheader;
+          text-align: center;
+        }
+        @media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+        grid-template-columns: 3fr 3fr ;
+        grid-template-rows: 2fr 1fr 10fr;
+        grid-template-areas: 
+        "header header" 
+        "subheader subheader"
+        "main nav";
+        padding: 1em;
+        gap: 30px;
+    
+  }
+  .grid-container{
+    padding: 30px;
+  }
+}
+
+    </style>
+  </head>
+  <body class="grid-container">
+    <div class="header">
+     
+      <img src="priya.jpg" width="100px" height="100px">
+      <h1>PRIYADHARSHINI</h1>
+    </div>
+    
+    <div class="vertical">
+
+    </div>
+    <div class="subheader">
+      N Damen avenue, Chicago 99999|999-999-9999|hello@kickresume.com<hr>
+    </div>
+    <div class="nav">
+      <i class="fa fa-briefcase"></i>
+        <span style="color: grey";>Work experience</span></i> <br>
+          <p>
+                          
+            Company : XYZ Web Solutions<br>
+
+            Position : Web Developer<br>
+
+            Duration : January 2020 - Present<br><br>
+
+            Responsibilities:
+            <ul style="font-size: 20px;">
+             <li>Developed websites and web applications using HTML, CSS, and JavaScript.</li>
+             <li>Created responsive designs for various devices using frameworks like Bootstrap.</li>
+             <li>Used PHP and Python for back-end development and database management.</li>
+             <li>Customized CMS platforms like WordPress and Joomla for clients.</li>
+             <li>Stayed updated with industry trends through online courses.</li>
+             <li>In this role, I've gained valuable experience in web development, responsive design, and collaborating with teams to deliver client-focused solutions.</li>
+             </ul>
+            </p>
+            <p>
+              <i class="fa fa-graduation-cap education-icon"></i>
+                <span style="color: grey";>Education</span>
+                <ul style="font-size: large;">
+                  <li>Bachelor of Science in Computer Science</li><br>
+                  <li>University of XYZ</li><br>
+                  <li>Graduated: May 2020</li><br>
+
+                  <li>High School Diploma</li><br>
+                  <li>ABC High School</li><br>
+                  <li>Graduated: June 2016</li><br>
+
+                </ul>
+            </p>
+    </div>
+    <div class="main">
+       <i class="fa fa-user-circle" aria-hidden="true"></i>
+         <span style="color: grey";>Profile</span></i>
+           <p>
+              Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer.
+           </p>
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+                  <span style="color: grey";>Skills</span></i> <br>
+                      <b>Technical skills</b>
+         <p>Java script</p>
+                 <div class="container">
+                  <div class="skill js">80%</div>
+                 </div>
+         <p>CSS</p>
+                 <div class="container">
+                  <div class="skill css">70%</div>
+                 </div>
+         <p>HTML</p>
+                 <div class="container">
+                  <div class="skill html">90%</div>
+                 </div>
+         <p>React</p>
+                <div class="container">
+                 <div class="skill react">
+                   80%
+                </div>
+       
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
